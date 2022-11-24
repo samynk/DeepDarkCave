@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="oCBBn8" name="DeepDarkCave2" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="XxMPwp" name="DeepDarkCave2">
+    <GROUP id="{8D730DA3-AAFA-CC93-13F7-DB2CDB7BD1E1}" name="Source">
+      <FILE id="wme7WA" name="Wall.cpp" compile="1" resource="0" file="Source/Wall.cpp"/>
+      <FILE id="stj98E" name="Wall.h" compile="0" resource="0" file="Source/Wall.h"/>
+      <FILE id="AsNebk" name="GameObject.h" compile="0" resource="0" file="Source/GameObject.h"/>
+      <FILE id="QvJ5YS" name="Mine.cpp" compile="1" resource="0" file="Source/Mine.cpp"/>
+      <FILE id="grNRTJ" name="Mine.h" compile="0" resource="0" file="Source/Mine.h"/>
+      <FILE id="yyWxCb" name="SubMarine.cpp" compile="1" resource="0" file="Source/SubMarine.cpp"/>
+      <FILE id="gm8Hdm" name="SubMarine.h" compile="0" resource="0" file="Source/SubMarine.h"/>
+      <FILE id="ZaKlqb" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="vj4hAU" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="GyfhfT" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" externalLibraries="fmodL_vc.lib&#10;fmodstudioL_vc.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="DeepDarkCave2" headerPath="../../FMODLib/api/core/inc&#10;../../FMODLib/api/studio/inc&#10;../../FMODLib/api/fsbank/inc"
+                       libraryPath="../../FMODLib/api/core/lib/x64&#10;../../FMODLib/api/studio/lib/x64&#10;../../FMODLib/api/fsbank/lib/x64"
+                       postbuildCommand="cd&#10;copy /Y ..\..\FMODLib\api\core\lib\x64\FModL.dll &quot;$(TargetDir)&quot;&#10;copy /Y ..\..\FMODLib\api\studio\lib\x64\FModStudioL.dll &quot;$(TargetDir)&quot;&#10;&#10;"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="DeepDarkCave2"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_box2d" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../software/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../software/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_box2d" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
