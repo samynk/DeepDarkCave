@@ -56,3 +56,5 @@ Builds/VisualStudio2022/.vs/DeepDarkCave2/v17/Browse.VC.db
 Builds/VisualStudio2022/.vs/DeepDarkCave2/v17/.suo
 Builds/VisualStudio2022/.vs/DeepDarkCave2/FileContentIndex/read.lock
 /Builds/VisualStudio2022/x64/Debug/App/DeepDark.9641405C.tlog/CL.11444.write.1.tlog
+
+!FMODLib/api/core/lib/x64/*.lib
